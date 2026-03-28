@@ -2,15 +2,15 @@
 
 Scores pipeline output against a golden dataset on two axes:
 
-1. Edit accuracy (50% of composite score)
+1. Edit accuracy (50% of benchmark score)
    Extracts word-level diffs from original→predicted and original→expected,
    then computes precision/recall/F1 over the set of edits. This measures
    whether you made the right changes and only the right changes.
 
-2. Citation accuracy (50% of composite score)
+2. Citation accuracy (50% of benchmark score)
    Set comparison of cited rule IDs. Precision/recall/F1.
 
-The composite score is the mean of edit F1 and citation F1 per paragraph,
+The benchmark score is the mean of edit F1 and citation F1 per paragraph,
 averaged across all paragraphs. This gives a single trackable number
 for benchmarking across iterations.
 
@@ -221,10 +221,10 @@ def evaluate(input_path: str, output_path: str, expected_path: str):
         if cite_m["fn"] > 0:
             print(f"    Missed: {set(exp.citations) - set(pred.citations)}")
 
-        # --- Composite ---
+        # --- Benchmark ---
         composite = (edit_m["f1"] * EDIT_WEIGHT) + (cite_m["f1"] * CITATION_WEIGHT)
         composite_scores.append(composite)
-        print(f"\n  COMPOSITE SCORE: {composite:.1%}")
+        print(f"\n  BENCHMARK SCORE: {composite:.1%}")
 
     # === Summary ===
     print(f"\n{'=' * 70}")
@@ -248,7 +248,7 @@ def evaluate(input_path: str, output_path: str, expected_path: str):
         print(f"  Avg citation F1:          {avg_cite_f1:.1%}")
         print(f"")
         print(f"  ┌─────────────────────────────────┐")
-        print(f"  │  COMPOSITE SCORE:  {avg_composite:.1%}          │")
+        print(f"  │  BENCHMARK SCORE:  {avg_composite:.1%}          │")
         print(f"  │  (edit F1 × {EDIT_WEIGHT} + citation F1 × {CITATION_WEIGHT})  │")
         print(f"  └─────────────────────────────────┘")
     else:

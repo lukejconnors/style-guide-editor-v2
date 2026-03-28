@@ -1,6 +1,6 @@
 """Main pipeline entry point.
 
-Orchestrates: load → NLP → percolate → LLM edit → write output.
+Orchestrates: load → percolate → LLM edit → write output.
 
 Usage:
     python src/main.py --input data/input.json --output data/output.json
@@ -14,7 +14,6 @@ import sys
 from openai import OpenAI
 
 from models import InputFile, OutputFile, OutputParagraph, RuleIndex
-from nlp import process_paragraph
 from retrieval import InMemoryPercolator
 from copy_editor import edit_paragraph
 
@@ -46,21 +45,17 @@ def run_pipeline(input_path: str, output_path: str, index_path: str):
     for para in input_data.input:
         print(f"\nProcessing {para.id}...")
 
-        # Step 2: NLP processing
-        processed = process_paragraph(para.text)
-        print(f"  Step 2 (NLP): {len(processed.sentences)} sentences")
-
-        # Step 3: Percolate — find rules whose matchers fire on this text
+        # Step 2: Percolate — find rules whose matchers fire on this text
         candidate_rules = percolator.find_relevant_rules(para.text)
         print(
-            f"  Step 3 (Percolate): {len(candidate_rules)} candidate rules"
+            f"  Step 2 (Percolate): {len(candidate_rules)} candidate rules"
         )
         for rule in candidate_rules:
             print(f"    → {rule.title}")
 
-        # Step 4: LLM editing — apply candidate rules to full paragraph
-        result = edit_paragraph(client, processed, candidate_rules, para.id)
-        print(f"  Step 4 (Edit): {len(result.citations)} rules applied")
+        # Step 3: LLM editing — apply candidate rules to full paragraph
+        result = edit_paragraph(client, para.text, candidate_rules, para.id)
+        print(f"  Step 3 (Edit): {len(result.citations)} rules applied")
         for cid in result.citations:
             rule = percolator.rules_by_id.get(cid)
             if rule:

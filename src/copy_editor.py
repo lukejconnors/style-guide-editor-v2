@@ -5,7 +5,6 @@ import json
 from openai import OpenAI
 
 from models import Edit, IndexedRule, OutputParagraph
-from nlp import ProcessedParagraph
 from prompts import COPY_EDITOR_SYSTEM, COPY_EDITOR_USER
 
 
@@ -19,7 +18,7 @@ def format_rules_for_prompt(rules: list[IndexedRule]) -> str:
 
 def edit_paragraph(
     client: OpenAI,
-    paragraph: ProcessedParagraph,
+    text: str,
     candidate_rules: list[IndexedRule],
     paragraph_id: str,
 ) -> OutputParagraph:
@@ -27,7 +26,7 @@ def edit_paragraph(
 
     Args:
         client: OpenAI client
-        paragraph: NLP-processed paragraph
+        text: raw paragraph text
         candidate_rules: rules identified as potentially relevant by percolator
         paragraph_id: ID from input file
 
@@ -38,18 +37,16 @@ def edit_paragraph(
     if not candidate_rules:
         return OutputParagraph(
             id=paragraph_id,
-            edit=paragraph.text,
+            edit=text,
             edits=[],
             citations=[],
         )
 
     # Build prompt
     rules_block = format_rules_for_prompt(candidate_rules)
-    pos_context = paragraph.pos_tags_str()
 
     user_prompt = COPY_EDITOR_USER.format(
-        paragraph=paragraph.text,
-        pos_tags=pos_context,
+        paragraph=text,
         rules=rules_block,
     )
 
@@ -81,7 +78,7 @@ def edit_paragraph(
 
     return OutputParagraph(
         id=paragraph_id,
-        edit=result.get("edit", paragraph.text),
+        edit=result.get("edit", text),
         edits=edits,
         citations=citations,
     )
