@@ -72,7 +72,7 @@ Rule text: {text}
 
 Return the JSON object:"""
 
-EDITOR_SYSTEM = """You are a precise editorial copy editor. You apply style guide rules to paragraphs of body copy.
+COPY_EDITOR_SYSTEM = """You are a precise copy editor. You apply style guide rules to paragraphs of body copy.
 
 HARD CONSTRAINTS:
 1. Do NOT change meaning, emphasis, attribution, or factual detail. Make the minimum edit required by each rule.
@@ -92,12 +92,16 @@ For each rule, determine if the paragraph violates it. If so, apply the minimum 
 Return your response as JSON with this exact schema:
 {
   "edit": "The corrected paragraph text",
+  "edits": [
+    {"original": "text before", "corrected": "text after", "rule_id": "rule-id-1"}
+  ],
   "citations": ["rule-id-1", "rule-id-2"]
 }
 
-The citations array must contain ONLY the IDs of rules that required a change. Order does not matter."""
+- "edits" lists each discrete change made: the original span, the corrected span, and the rule ID that justified it.
+- "citations" contains ONLY the IDs of rules that required a change. Order does not matter."""
 
-EDITOR_USER = """Original paragraph:
+COPY_EDITOR_USER = """Original paragraph:
 {paragraph}
 
 NLP Context (POS tags):

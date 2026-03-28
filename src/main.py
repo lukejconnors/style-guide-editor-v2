@@ -16,7 +16,7 @@ from openai import OpenAI
 from models import InputFile, OutputFile, OutputParagraph, RuleIndex
 from nlp import process_paragraph
 from retrieval import InMemoryPercolator
-from editor import edit_paragraph
+from copy_editor import edit_paragraph
 
 
 def load_rule_index(index_path: str) -> RuleIndex:

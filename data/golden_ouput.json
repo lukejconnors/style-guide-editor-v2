@@ -3,76 +3,27 @@
     {
       "id": "para-001",
       "edit": "Gov. Kathy Hochul's team spent the day calling county executives across New York state before budget talks resumed in Albany. Her press secretary Alex Rivera told local officials a revised memo would land before midnight. A senior adviser working the phones said the governor wanted written feedback before lawmakers returned to the Capitol.",
-      "edits": [
-        {
-          "original": "New York State",
-          "corrected": "New York state",
-          "rule_id": "2be43c81-4637-4811-a667-84f602bd5655"
-        },
-        {
-          "original": "Press Secretary",
-          "corrected": "press secretary",
-          "rule_id": "254b17a9-bbb5-4144-bd44-800c218fdfec"
-        },
-        {
-          "original": "advisor",
-          "corrected": "adviser",
-          "rule_id": "263575a0-86e2-4f2c-9076-788ead3442d7"
-        }
-      ],
-      "citations": [
-        "2be43c81-4637-4811-a667-84f602bd5655",
-        "254b17a9-bbb5-4144-bd44-800c218fdfec",
-        "263575a0-86e2-4f2c-9076-788ead3442d7"
-      ]
+      "citations": ["2be43c81-4637-4811-a667-84f602bd5655", "254b17a9-bbb5-4144-bd44-800c218fdfec", "263575a0-86e2-4f2c-9076-788ead3442d7"]
     },
     {
       "id": "para-002",
       "edit": "Backers of the free-trade agreement are pitching it as a supply-chain hedge rather than a broad ideological reset. One Democratic senator has tied the package to child care access and factory investment in her state. Another policymaker close to the talks said the decision-making process could drag well into the spring.",
-      "edits": [],
       "citations": []
     },
     {
       "id": "para-003",
       "edit": "At the refugee center on the edge of downtown, volunteers were still moving cots into place as families filed through intake. Staffers worried asylum-seekers would be stuck for hours without access to cellphone charging stations or child care rooms. The nonprofit's director said the current timeframe for processing new arrivals had already strained a small workforce trained for far fewer people.",
-      "edits": [
-        {
-          "original": "asylum seekers",
-          "corrected": "asylum-seekers",
-          "rule_id": "280b85c8-c24c-42a3-beb8-26d9ba5f40c7"
-        }
-      ],
-      "citations": [
-        "280b85c8-c24c-42a3-beb8-26d9ba5f40c7"
-      ]
+      "citations": ["280b85c8-c24c-42a3-beb8-26d9ba5f40c7"]
     },
     {
       "id": "para-004",
       "edit": "The startup wants to start up a second office near the Navy Yard before the end of the year, according to two people granted anonymity to discuss internal planning. A national security adviser who has spoken with the company said executives are building a separate webpage for contractors while keeping the main website aimed at customers. The redesign is also meant to simplify the login process for new users.",
-      "edits": [
-        {
-          "original": "web page",
-          "corrected": "webpage",
-          "rule_id": "e824fc2f-ede2-4590-966f-54fe4b6851cc"
-        }
-      ],
-      "citations": [
-        "e824fc2f-ede2-4590-966f-54fe4b6851cc"
-      ]
+      "citations": ["e824fc2f-ede2-4590-966f-54fe4b6851cc"]
     },
     {
       "id": "para-005",
       "edit": "During a stop in Florida, first lady Melania Trump toured a pre-K classroom rebuilt after last year's storm and urged local officials to speed more aid to working families. The appearance was also designed to sharpen the president's reelection message before down-ballot races start to crowd the midterm calendar, according to two people briefed on the planning. It came a day after state officials rolled out a new recovery package for school districts still dealing with storm damage.",
-      "edits": [
-        {
-          "original": "pre k",
-          "corrected": "pre-K",
-          "rule_id": "c62e975a-bbc6-4f03-be8d-3ab34d9a88ca"
-        }
-      ],
-      "citations": [
-        "c62e975a-bbc6-4f03-be8d-3ab34d9a88ca"
-      ]
+      "citations": ["c62e975a-bbc6-4f03-be8d-3ab34d9a88ca"]
     }
   ]
 }

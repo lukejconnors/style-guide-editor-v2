@@ -4,9 +4,9 @@ import json
 
 from openai import OpenAI
 
-from models import IndexedRule, OutputParagraph
+from models import Edit, IndexedRule, OutputParagraph
 from nlp import ProcessedParagraph
-from prompts import EDITOR_SYSTEM, EDITOR_USER
+from prompts import COPY_EDITOR_SYSTEM, COPY_EDITOR_USER
 
 
 def format_rules_for_prompt(rules: list[IndexedRule]) -> str:
@@ -39,6 +39,7 @@ def edit_paragraph(
         return OutputParagraph(
             id=paragraph_id,
             edit=paragraph.text,
+            edits=[],
             citations=[],
         )
 
@@ -46,17 +47,16 @@ def edit_paragraph(
     rules_block = format_rules_for_prompt(candidate_rules)
     pos_context = paragraph.pos_tags_str()
 
-    user_prompt = EDITOR_USER.format(
+    user_prompt = COPY_EDITOR_USER.format(
         paragraph=paragraph.text,
         pos_tags=pos_context,
         rules=rules_block,
     )
 
     response = client.chat.completions.create(
-        model="gpt-4.1",
-        temperature=0,
+        model="gpt-5",
         messages=[
-            {"role": "system", "content": EDITOR_SYSTEM},
+            {"role": "system", "content": COPY_EDITOR_SYSTEM},
             {"role": "user", "content": user_prompt},
         ],
         response_format={"type": "json_object"},
@@ -65,12 +65,23 @@ def edit_paragraph(
     raw = response.choices[0].message.content.strip()
     result = json.loads(raw)
 
-    # Validate: only allow citations for rules we actually sent
+    # Validate: only allow edits for rules we actually sent
     valid_rule_ids = {r.id for r in candidate_rules}
-    citations = [cid for cid in result.get("citations", []) if cid in valid_rule_ids]
+
+    # Parse edits, filtering to valid rule IDs
+    raw_edits = result.get("edits", [])
+    edits = [
+        Edit(original=e["original"], corrected=e["corrected"], rule_id=e["rule_id"])
+        for e in raw_edits
+        if e.get("rule_id") in valid_rule_ids
+    ]
+
+    # Derive citations from actual edits made (not LLM's separate citations array)
+    citations = list({e.rule_id for e in edits})
 
     return OutputParagraph(
         id=paragraph_id,
         edit=result.get("edit", paragraph.text),
+        edits=edits,
         citations=citations,
     )

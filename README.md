@@ -73,7 +73,7 @@ python src/evaluate.py --output data/output.json --expected data/expected.json
 │   ├── build_index.py      ← One-time: LLM generates match terms/patterns per rule
 │   ├── nlp.py              ← spaCy NLP processing
 │   ├── retrieval.py        ← In-memory percolator (with ES migration comments)
-│   ├── editor.py           ← LLM editing with GPT-4.1
+│   ├── copy_editor.py      ← LLM copy editing with GPT-4.1
 │   ├── prompts.py          ← Prompt templates
 │   ├── evaluate.py         ← Evaluation harness
 │   └── models.py           ← Pydantic data models
@@ -88,7 +88,7 @@ python src/evaluate.py --output data/output.json --expected data/expected.json
 | 1 | `main.py` | Load input paragraphs and rule index |
 | 2 | `nlp.py` | spaCy: sentence segmentation, POS tags, NER |
 | 3 | `retrieval.py` | Percolate: test input text against all rule matchers |
-| 4 | `editor.py` | GPT-4.1 applies candidate rules → corrected text + citations |
+| 4 | `copy_editor.py` | GPT-4.1 applies candidate rules → corrected text + citations |
 | 5 | `main.py` | Write output JSON |
 
 ## Scaling Path

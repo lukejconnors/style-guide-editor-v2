@@ -14,9 +14,16 @@ class InputFile(BaseModel):
     input: list[InputParagraph]
 
 
+class Edit(BaseModel):
+    original: str
+    corrected: str
+    rule_id: str
+
+
 class OutputParagraph(BaseModel):
     id: str
     edit: str
+    edits: list[Edit] = []  # optional for backward compatibility
     citations: list[str]
 
 

@@ -1,0 +1,648 @@
+{
+  "rules": [
+    {
+      "id": "2f9e2587-723c-4135-960d-b230b94248ae",
+      "title": "policymaker, policymaking",
+      "text": "One word. ",
+      "terms": [
+        "policy-making",
+        "policymakers",
+        "policy-maker",
+        "policymaker",
+        "policy makers",
+        "policy maker",
+        "policy making",
+        "policy-makers",
+        "policymaking"
+      ],
+      "patterns": []
+    },
+    {
+      "id": "254b17a9-bbb5-4144-bd44-800c218fdfec",
+      "title": "press secretary",
+      "text": "Always lowercase. ",
+      "terms": [
+        "press secretary"
+      ],
+      "patterns": []
+    },
+    {
+      "id": "f59d73f3-edf8-4103-9651-3b5a32d5bdb4",
+      "title": "cellphone",
+      "text": "Lowercase, one word.",
+      "terms": [
+        "cell-phone",
+        "cell phone",
+        "cellphone"
+      ],
+      "patterns": []
+    },
+    {
+      "id": "280b85c8-c24c-42a3-beb8-26d9ba5f40c7",
+      "title": "asylum-seeker",
+      "text": "A person fleeing their country due to persecution, planning to apply for asylum in the U.S.",
+      "terms": [
+        "asylum seekers",
+        "asylum-seekers",
+        "asylum seeker",
+        "asylum-seeker"
+      ],
+      "patterns": []
+    },
+    {
+      "id": "301a5b7f-618f-4e01-924e-ecd9255c3ec6",
+      "title": "free-trade agreement",
+      "text": "Hyphenated in this form. ",
+      "terms": [
+        "free-trade agreements",
+        "free-trade agreement",
+        "free trade agreements",
+        "free trade agreement"
+      ],
+      "patterns": []
+    },
+    {
+      "id": "ff6cae81-3bab-4e7f-818f-923d7a381a06",
+      "title": "email",
+      "text": "Do not hyphenate.",
+      "terms": [
+        "e-mail",
+        "email"
+      ],
+      "patterns": []
+    },
+    {
+      "id": "f6b04178-bc00-4578-8f8a-b98110e0e4c5",
+      "title": "child care",
+      "text": "Two words as noun and adjective: *the child care center.*",
+      "terms": [
+        "child-care center",
+        "childcare center",
+        "childcare",
+        "child-care",
+        "child care",
+        "child care center"
+      ],
+      "patterns": []
+    },
+    {
+      "id": "06c30385-7f25-4fda-9e00-649e210e303e",
+      "title": "U.S. political parties: Democratic Party",
+      "text": "Use Democratic, not Democrat, for uses such as *Democratic-controlled Senate* and the *Democratic senator.*",
+      "terms": [
+        "democratic-controlled",
+        "democrat party",
+        "democratic party",
+        "democrat senator",
+        "democratic senator",
+        "democrat-controlled"
+      ],
+      "patterns": []
+    },
+    {
+      "id": "7a4e9548-ec5d-4a1a-8ad6-976b2ccde9f7",
+      "title": "canvassing",
+      "text": "The act of soliciting votes from potential voters.",
+      "terms": [
+        "canvassing",
+        "canvasses",
+        "canvassed",
+        "canvass"
+      ],
+      "patterns": []
+    },
+    {
+      "id": "969e7693-1b54-48bf-bc21-baa90bc11076",
+      "title": "chair",
+      "text": "Use instead of *chairwoman* or *chairman.* Capitalize as a title before a person\u2019s name. \n\nWhen using chair as a title, remove committee: *House Ways and Means Chair Jason Smith,* not *House Ways and Means Committee Chair Jason Smith.*\n\n",
+      "terms": [
+        "committee chair",
+        "chair",
+        "chairman",
+        "chairwoman",
+        "house ways and means committee chair",
+        "house ways and means chair",
+        "chairperson"
+      ],
+      "patterns": []
+    },
+    {
+      "id": "31f04356-1bb4-49cd-bfa8-c5def16de604",
+      "title": "startup; start up",
+      "text": "Use startup as a noun, start up as a verb.",
+      "terms": [
+        "startup",
+        "start up",
+        "start-up"
+      ],
+      "patterns": []
+    },
+    {
+      "id": "6c0faa48-352d-4d84-b55e-7de9abe0a799",
+      "title": "front-runner",
+      "text": "With hyphen.",
+      "terms": [
+        "frontrunner",
+        "front-runner",
+        "front runner"
+      ],
+      "patterns": []
+    },
+    {
+      "id": "3f0e3706-aeea-43a9-a34b-47cfe513c385",
+      "title": "green light, green-light",
+      "text": "Use two words as a noun.\n>Example: The racer got the green light to start.\n\nHyphenate the verb. Use green-lighted and not green-lit.\n>Example: The studio green-lighted the movie.",
+      "terms": [
+        "green-light",
+        "green lit",
+        "green light",
+        "green-lighted",
+        "green-lit"
+      ],
+      "patterns": []
+    },
+    {
+      "id": "e9f8b816-a133-47d8-8bd2-74636d913056",
+      "title": "workday, workforce, workplace, workweek",
+      "text": "All one word. ",
+      "terms": [
+        "work week",
+        "workplace",
+        "workday",
+        "workforce",
+        "work place",
+        "work day",
+        "workweek",
+        "work force"
+      ],
+      "patterns": []
+    },
+    {
+      "id": "4a024ac9-6d76-4383-a63b-2b71f502a70a",
+      "title": "dataset",
+      "text": "One word. ",
+      "terms": [
+        "data set",
+        "data-set",
+        "dataset"
+      ],
+      "patterns": []
+    },
+    {
+      "id": "ef77d623-5e7d-485c-9e06-d2191b92d5c0",
+      "title": "conspiracy theorist, election denier",
+      "text": "Avoid using these terms to describe a person. Instead, be more precise about what actions a person is taking, for example, *a person who denies Biden won the 2020 election.*",
+      "terms": [
+        "conspiracy theorist",
+        "election denial",
+        "denies biden won the 2020 election",
+        "conspiracy theory",
+        "election denier"
+      ],
+      "patterns": []
+    },
+    {
+      "id": "b8b33ea4-5fea-4675-b963-fd0378de5e8f",
+      "title": "decision-maker, decision-making",
+      "text": "Hyphenated. ",
+      "terms": [
+        "decision-makers",
+        "decision making",
+        "decision-making",
+        "decision maker",
+        "decision-maker",
+        "decision makers"
+      ],
+      "patterns": []
+    },
+    {
+      "id": "cb45b253-9751-4c68-8eb1-38ae84980900",
+      "title": "co-",
+      "text": "Use a hyphen for nouns, adjectives and verbs that indicate occupation or status: *co-author, co-chair, co-defendant, co-host, co-pilot, co-star, co-worker*.",
+      "terms": [
+        "co-pilot",
+        "co-author",
+        "cohost",
+        "cochair",
+        "codefendant",
+        "costar",
+        "co-worker",
+        "co-host",
+        "coworker",
+        "copilot",
+        "co-defendant",
+        "coauthor",
+        "co-star",
+        "co-chair"
+      ],
+      "patterns": []
+    },
+    {
+      "id": "be7bb60a-979b-44ca-afc4-78f03053d89f",
+      "title": "login, logoff, logon; log in, log off, log on",
+      "text": "Use one word in the noun and adjective forms. \n>Example: She forgot her login password.\n\nUse two words in the verb form. \n>Example: Steve forgot to log off.",
+      "terms": [
+        "logon",
+        "log-in",
+        "log off",
+        "log on",
+        "log-on",
+        "logoff",
+        "log in",
+        "log-off",
+        "login"
+      ],
+      "patterns": []
+    },
+    {
+      "id": "8aefa98d-e989-4e07-993c-b90b0cb2d7ea",
+      "title": "Signalgate",
+      "text": "One word, lowercase g, no quotation marks. A March 2025 incident that unveiled messages sent between top Trump administration officials through the encrypted messaging app Signal. The group chat included The Atlantic\u2019s editor-in-chief Jeffrey Goldberg, who exposed the messages detailing a planned military strike against the Iran-backed Houthi militant group in Yemen. ",
+      "terms": [
+        "signalgate"
+      ],
+      "patterns": []
+    },
+    {
+      "id": "f8ea778b-b9b6-4e72-b434-d86f083063d4",
+      "title": "Congress",
+      "text": "Capitalize, but lowercase congressional.",
+      "terms": [
+        "congress",
+        "congressional"
+      ],
+      "patterns": []
+    },
+    {
+      "id": "8b03c28f-d24e-4f4a-a9cd-80f010749047",
+      "title": "U.S. representative, representative, member of Congress, lawmaker ",
+      "text": "Use instead of *congressman,* *congresswoman* or *congressperson* when referring to members of the House. Use *senator* or *lawmaker* when referring to members of the Senate. ",
+      "terms": [
+        "member of congress",
+        "congresswoman",
+        "representative",
+        "lawmaker",
+        "congressperson",
+        "congressman",
+        "u.s. representative",
+        "senator"
+      ],
+      "patterns": []
+    },
+    {
+      "id": "bbfe3920-5343-4032-8753-b74746d594c4",
+      "title": "districts",
+      "text": "Use figures even when the district number is smaller than 10: *1st Congressional District* or *1st District* not *First Congressional District, First District.* When abbreviating, use postal shorthand and add zero to single-digit districts: *NH-01, NY-04.*",
+      "terms": [
+        "first congressional district",
+        "1st congressional district",
+        "ny-04",
+        "1st district",
+        "first district",
+        "nh-01"
+      ],
+      "patterns": [
+        "\\bfirst congressional district\\b",
+        "\\bfirst district\\b",
+        "\\b[0-9]{1,2}(st|nd|rd|th) congressional district\\b",
+        "\\b[0-9]{1,2}(st|nd|rd|th) district\\b",
+        "\\b[a-z]{2}-0[1-9]\\b",
+        "\\b[a-z]{2}-[1-9][0-9]\\b"
+      ]
+    },
+    {
+      "id": "c62e975a-bbc6-4f03-be8d-3ab34d9a88ca",
+      "title": "pre-K",
+      "text": "Write as pre-K.",
+      "terms": [
+        "pre k",
+        "prek",
+        "pre-kindergarten",
+        "pre kindergarten",
+        "pre-k"
+      ],
+      "patterns": []
+    },
+    {
+      "id": "263575a0-86e2-4f2c-9076-788ead3442d7",
+      "title": "adviser",
+      "text": "Use adviser instead of advisor, except when referring to anyone with advisor as an official title.",
+      "terms": [
+        "national security adviser",
+        "national security advisor",
+        "adviser",
+        "advisor"
+      ],
+      "patterns": []
+    },
+    {
+      "id": "b1ee4b05-82e5-48cb-9b1d-e382dc90439c",
+      "title": "Honorifics",
+      "text": "Do not use honorifics, *Mr., Mrs., Ms., Miss,* outside of direct quotations or quoted material, and do not use them to distinguish between people with the same last name. Include period if used. Also, see our [entry on Dr.](https://stylebook.politicoapps.com/rule/292ca63a-8900-4589-ace4-b233d06ebd59)",
+      "terms": [
+        "mr",
+        "mr.",
+        "mrs.",
+        "ms",
+        "miss",
+        "mrs",
+        "ms."
+      ],
+      "patterns": []
+    },
+    {
+      "id": "46efaa83-a6e4-48d8-a3ad-f8856cc7404e",
+      "title": "POLITICO Pro",
+      "text": "When referencing in a story, use **POLITICO**, sted POLITICO Pro, Pro, Pro XXXXX: *Boehner told POLITICO* sted *Boehner told POLITICO Pro* or *Boehner told Pro Health Care.* Campaign Pro is the exception.",
+      "terms": [
+        "pro healthcare",
+        "pro",
+        "politico",
+        "pro health care",
+        "politico pro",
+        "campaign pro",
+        "pro xxxxx"
+      ],
+      "patterns": []
+    },
+    {
+      "id": "1ef7fc0e-ec07-488e-add1-555db0723e4d",
+      "title": "G10",
+      "text": "The G7 plus Belgium, the Netherlands and Sweden. G10 is acceptable on first reference.",
+      "terms": [
+        "g7",
+        "g-7",
+        "netherlands",
+        "sweden",
+        "belgium",
+        "g10",
+        "g 10",
+        "g-10",
+        "g 7",
+        "the netherlands"
+      ],
+      "patterns": []
+    },
+    {
+      "id": "483cef6d-f350-455f-a21d-376f69b02251",
+      "title": "interoperability",
+      "text": "Down in all uses; ability of various technology systems or devices to be able to work together. ",
+      "terms": [
+        "interoperability"
+      ],
+      "patterns": []
+    },
+    {
+      "id": "2716e9df-8067-410e-a451-782dc2f3fa7d",
+      "title": "\"Liberation Day\"",
+      "text": "Use quotation marks around \"Liberation Day\" with an explanation: \"Liberation Day,\" a term coined by the Trump White House, refers to President Donald Trump's April 2, 2025, rollout of reciprocal tariffs on imports from countries his administration identified as having unfair trade surpluses with the U.S. and significant barriers to American goods.",
+      "terms": [
+        "donald trump",
+        "trump white house",
+        "\"liberation day\"",
+        "liberation day",
+        "reciprocal tariffs"
+      ],
+      "patterns": []
+    },
+    {
+      "id": "f858035a-2794-4599-a059-818dee954b8c",
+      "title": "first lady",
+      "text": "Never capitalize first lady as a title: *first lady Melania Trump*.",
+      "terms": [
+        "first lady melania trump",
+        "first lady hillary clinton",
+        "first lady michelle obama",
+        "first lady jill biden",
+        "first lady",
+        "first lady laura bush"
+      ],
+      "patterns": []
+    },
+    {
+      "id": "9d53e5b2-7574-47b7-a968-3e0003c31a84",
+      "title": "timeframe",
+      "text": "One word.",
+      "terms": [
+        "timeframe",
+        "time frame",
+        "time-frame"
+      ],
+      "patterns": []
+    },
+    {
+      "id": "96b5ba1c-11a5-4151-8156-89dbaa6ae992",
+      "title": "daylong, dayslong",
+      "text": "One word. ",
+      "terms": [
+        "day long",
+        "days long",
+        "dayslong",
+        "daylong"
+      ],
+      "patterns": []
+    },
+    {
+      "id": "30660a85-f169-44fa-971c-99c377fd6981",
+      "title": "ranking member",
+      "text": "Most senior member of a minority party on a congressional or state legislature committee. Down in all instances, even before a name. \n>Example: The witness was questioned by ranking member Jeff Merkley (D-Ore.).",
+      "terms": [
+        "ranking member"
+      ],
+      "patterns": []
+    },
+    {
+      "id": "917c7d75-c294-499e-8c3e-9e96d10ab660",
+      "title": "down-ballot",
+      "text": "Refers to races that are below the most important offices listed on an electoral ballot. Note hyphen; not downballot.",
+      "terms": [
+        "down-ballot",
+        "downballot"
+      ],
+      "patterns": []
+    },
+    {
+      "id": "2ae7a89e-5688-43f2-a4a4-38252b8e6553",
+      "title": "war chest",
+      "text": "Avoid using this term. Use *campaign funds* or *in the bank* instead.",
+      "terms": [
+        "in the bank",
+        "campaign funds",
+        "war chest"
+      ],
+      "patterns": []
+    },
+    {
+      "id": "64338a5f-0bf5-4cb9-92b4-189f71917a8e",
+      "title": "megadonor",
+      "text": "Refers to individuals making large donations to a candidate, political party or organization",
+      "terms": [
+        "mega-donors",
+        "mega donor",
+        "mega donors",
+        "mega-donor",
+        "megadonors",
+        "megadonor"
+      ],
+      "patterns": []
+    },
+    {
+      "id": "a2f21254-5a0d-4471-9f00-0118f2713803",
+      "title": "tax exempt, tax-exempt",
+      "text": "Two words for the noun. \n>Example: The organization was tax exempt. \n\nHyphenate the adjective: \n>The organization checked on its tax-exempt status.",
+      "terms": [
+        "tax exempt",
+        "tax-exempt"
+      ],
+      "patterns": []
+    },
+    {
+      "id": "9e11371c-dbae-45fc-b949-2f2e26c3461f",
+      "title": "hyphens",
+      "text": "Modifying adverbs ending in -ly are not hyphenated: *widely known*, not *widely-known*.",
+      "terms": [],
+      "patterns": [
+        "\\b\\w+ly-\\w+"
+      ]
+    },
+    {
+      "id": "2be43c81-4637-4811-a667-84f602bd5655",
+      "title": "New York state",
+      "text": "The word state is lowercase. ",
+      "terms": [
+        "new york state"
+      ],
+      "patterns": []
+    },
+    {
+      "id": "f5ef2405-d5c2-4c2d-bf3d-3401edac7e85",
+      "title": "Using gender-neutral language",
+      "text": "In general, use terms that can apply to any gender.",
+      "terms": [
+        "gendered pronouns",
+        "gender neutral pronouns",
+        "gender neutral language",
+        "gendered terms",
+        "gender-neutral terms",
+        "gender neutral terms",
+        "gender-neutral language",
+        "gender-neutral pronouns",
+        "gendered language"
+      ],
+      "patterns": []
+    },
+    {
+      "id": "b3762bcc-25db-4467-990f-335b3ac22648",
+      "title": "co-pay, co-payment",
+      "text": "Use a hyphen. ",
+      "terms": [
+        "co pay",
+        "copayment",
+        "co payment",
+        "copay",
+        "co-payment",
+        "co-pay"
+      ],
+      "patterns": []
+    },
+    {
+      "id": "e824fc2f-ede2-4590-966f-54fe4b6851cc",
+      "title": "web, website, webcast, webpage ",
+      "text": "web, website, webcast, webpage",
+      "terms": [
+        "webcast",
+        "website",
+        "web",
+        "webpage"
+      ],
+      "patterns": []
+    },
+    {
+      "id": "c1ea5b83-1d37-4555-adf4-c24b5511145f",
+      "title": "national security adviser",
+      "text": "Always lowercase title in accordance with AP style.",
+      "terms": [
+        "national security adviser",
+        "national security advisor"
+      ],
+      "patterns": []
+    },
+    {
+      "id": "3c011ea7-eda6-4f9a-94d9-59573c715cd3",
+      "title": "whistleblower",
+      "text": "Use this term discerningly. A whistleblower is a credible person from inside a company or the government who has firsthand knowledge or documentation of wrongdoing, then makes a disclosure with the reasonable belief that it shows evidence of lawbreaking, misconduct, abuse of power or unethical behavior. A whistleblower can raise concerns internally, make disclosures to an official entity \u2014 law enforcement, Congress, an inspector general, etc. \u2014 or alert the public, either directly or through journalists. The dozens of whistleblower protection laws at the federal and state level can vary in their definitions, but a common thread is that a whistleblower is someone exercising their First Amendment rights, through lawfully established procedures, to challenge an abuse that betrays the public trust. A whistleblower\u2019s motive can and should be taken into account for assessing their reliability, but the federal Whistleblower Protection Act specifically says it is irrelevant to the protections the person receives. The accuracy and credibility of the information provided is most important. ",
+      "terms": [
+        "whistleblower",
+        "whistle-blowers",
+        "whistleblower protection act",
+        "whistleblowers",
+        "whistle blower",
+        "whistle blowers",
+        "whistle-blower"
+      ],
+      "patterns": []
+    },
+    {
+      "id": "516e7074-66fa-4c58-8f2d-9ddad225e980",
+      "title": "cease fire, ceasefire",
+      "text": "One word, no hyphen for both the noun and adjective form. Use two words for the verb. ",
+      "terms": [
+        "cease-fire",
+        "ceasefire",
+        "cease fire"
+      ],
+      "patterns": []
+    },
+    {
+      "id": "afa43bf6-fd53-4829-ada5-2e080791c2ed",
+      "title": "JPMorgan Chase",
+      "text": "Write as JPMorgan Chase.",
+      "terms": [
+        "jp morgan chase",
+        "jpmorgan chase",
+        "jpmorgan",
+        "jp morgan"
+      ],
+      "patterns": []
+    },
+    {
+      "id": "186968fe-ce0d-410d-a769-2aa9d04350e3",
+      "title": "Vance, JD",
+      "text": "Republican vice president and former senator from Ohio. Do not use periods between J and D. Do not say he grew up in Appalachia, as that is inaccurate. Instead, use southwestern Ohio or a Cincinnati suburb.",
+      "terms": [
+        "j.d. vance",
+        "jd vance",
+        "cincinnati suburb",
+        "former senator from ohio",
+        "appalachia",
+        "southwestern ohio",
+        "vance",
+        "republican vice president"
+      ],
+      "patterns": []
+    },
+    {
+      "id": "0906c042-b7c3-4202-8ca0-929f106479f6",
+      "title": "reelection, reelect ",
+      "text": "These terms are written with no hyphens. ",
+      "terms": [
+        "re-elect",
+        "re-election",
+        "reelection",
+        "reelect"
+      ],
+      "patterns": []
+    },
+    {
+      "id": "174dbe1d-3f66-4f02-89fe-7a78150ed79d",
+      "title": "cleanup, clean up",
+      "text": "Use one word as a noun and adjective. \n>Example: The toxic waste cleanup will take years.\n\nUse two words as a verb. \n>Example: DuPont will clean up the chemical spill.",
+      "terms": [
+        "cleanup",
+        "clean up",
+        "clean-up"
+      ],
+      "patterns": []
+    }
+  ]
+}

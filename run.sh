@@ -18,6 +18,11 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 DATA_DIR="$SCRIPT_DIR/data"
 SRC_DIR="$SCRIPT_DIR/src"
 
+# Activate virtual environment if present
+if [[ -f "$SCRIPT_DIR/.venv/bin/activate" ]]; then
+  source "$SCRIPT_DIR/.venv/bin/activate"
+fi
+
 INPUT_FILE="$DATA_DIR/input.json"
 OUTPUT_FILE="$DATA_DIR/output.json"
 
@@ -27,8 +32,8 @@ if [[ ! -f "$INPUT_FILE" ]]; then
 fi
 
 if [[ ! -f "$DATA_DIR/rule_index.json" ]]; then
-  echo "ERROR: Rule index not found. Run 'python src/build_index.py' first." >&2
-  exit 1
+  echo "Rule index not found. Building..."
+  python "$SRC_DIR/build_index.py"
 fi
 
 echo "=== Style Rule Copy Editor ==="
@@ -38,3 +43,10 @@ echo ""
 
 cd "$SCRIPT_DIR"
 python "$SRC_DIR/main.py" --input "$INPUT_FILE" --output "$OUTPUT_FILE"
+
+# Run evaluation if golden output exists
+GOLDEN_FILE="$DATA_DIR/golden_ouput.json"
+if [[ -f "$GOLDEN_FILE" ]]; then
+  echo ""
+  python "$SRC_DIR/evaluate.py" --input "$INPUT_FILE" --output "$OUTPUT_FILE" --expected "$GOLDEN_FILE"
+fi

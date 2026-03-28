@@ -12,9 +12,9 @@ This document records how AI tools were used during development of the style gui
 - **Verification:** Reviewed generated match configs against example input/output pairs. Checked that each rule's terms cover the forms that appear in the test paragraphs. Spot-checked regex patterns compile correctly.
 - **What the system constrains:** Match configs are generated once and cached as a static JSON file. They are human-reviewable and editable. The LLM is not called at retrieval time.
 
-### Style Editing (`editor.py`)
+### Copy Editing (`copy_editor.py`)
 - **Delegated to AI:** Determining which candidate rules are actually violated and producing corrected text with minimum edits.
-- **Why:** Rule application requires contextual judgment — noun vs. verb usage, casing conventions, whether a term appears in a quote, whether a change would alter meaning. This is the core editorial task the LLM is suited for.
+- **Why:** Rule application requires contextual judgment — noun vs. verb usage, casing conventions, whether a term appears in a quote, whether a change would alter meaning. This is the core copy editing task the LLM is suited for.
 - **What the system constrains:** The LLM only sees rules surfaced by the percolator — it cannot invent corrections from external style guides. The prompt enforces minimum-edit constraints. Structured JSON output is required. Post-processing validates that cited rule IDs exist in the candidate set.
 
 ## AI Usage in Development
