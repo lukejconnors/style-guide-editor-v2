@@ -60,21 +60,16 @@ pip install -r requirements.txt
 # 2. Set OpenAI API key
 export OPENAI_API_KEY=your-key-here
 
-# 3. Build the rule index (one-time)
-python src/build_index.py
 ```
 
 ## Usage
 
 ```bash
+# Optionally remove the rule_index.json if you would like to regerate it
+rm data/rule_index.json
+
 # Run the pipeline
 ./run.sh
-
-# Run with custom paths
-python src/main.py --input data/input.json --output data/output.json
-
-# Evaluate against expected output
-python src/evaluate.py --output data/output.json --expected data/expected.json
 ```
 
 ## File Structure
