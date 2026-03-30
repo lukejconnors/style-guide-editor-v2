@@ -22,8 +22,7 @@ def generate_match_config(client: OpenAI, rule: Rule) -> dict:
     Returns dict with "terms" and "patterns" keys.
     """
     response = client.chat.completions.create(
-        model="gpt-4.1",
-        temperature=0,
+        model="gpt-5",
         messages=[
             {"role": "system", "content": TRIGGER_GENERATION_SYSTEM},
             {
